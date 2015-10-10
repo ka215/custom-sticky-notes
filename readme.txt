@@ -25,9 +25,6 @@ Of course, if you enable the admin bar, it can also be used in the WEB frontend.
 
 That's it. Now you can easily start recording snippets on the WordPress
 
-== Frequently Asked Questions ==
-
-
 == Screenshots ==
 
 1. If the admin bar has enabled, sticky notes will pop up anytime, anywhere.
@@ -37,9 +34,14 @@ That's it. Now you can easily start recording snippets on the WordPress
 = 1.0.0 =
 * Initial public release!
 
+== Frequently Asked Questions ==
+
+It is not yet now.
 
 == Other Notes ==
 
+Original source is managing on the [GitHub](https://github.com/ka215/custom-sticky-notes "https://github.com/ka215/custom-sticky-notes").
 
 == Upgrade Notice ==
 
+Initial public release!
