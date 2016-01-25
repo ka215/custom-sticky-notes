@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Sticky Notes 1.0.0\n"
-"POT-Creation-Date: 2015-10-07 18:19+0900\n"
+"Project-Id-Version: Custom Sticky Notes 1.0.1\n"
+"POT-Creation-Date: 2016-01-25 15:45+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ka2 <ka2@ka2.org>\n"
 "Language-Team: ka2 <ka2@ka2.org>\n"
@@ -13,78 +13,83 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_x;_n;esc_attr__;esc_attr_e;esc_html__;"
 "esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.8.3\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: debug.log\n"
 
-#: custom-sticky-notes.php:174
+#: custom-sticky-notes.php:172
 msgid "Now Cached"
 msgstr ""
 
-#: custom-sticky-notes.php:306
+#: custom-sticky-notes.php:304
 msgid "Sticky Notes"
 msgstr ""
 
-#: custom-sticky-notes.php:319
+#: custom-sticky-notes.php:317
 msgid "Let's start Sticky Notes!"
 msgstr ""
 
-#: custom-sticky-notes.php:320
+#: custom-sticky-notes.php:318
 msgid "Cache to local only"
 msgstr ""
 
-#: custom-sticky-notes.php:321
+#: custom-sticky-notes.php:319
 msgid "Save"
 msgstr ""
 
-#: custom-sticky-notes.php:321
+#: custom-sticky-notes.php:319
 msgid "Clear"
 msgstr ""
 
-#: custom-sticky-notes.php:321
+#: custom-sticky-notes.php:319
 msgid "Close"
 msgstr ""
 
-#: custom-sticky-notes.php:340
+#: custom-sticky-notes.php:338
 msgid "Parameters for calling Ajax is not enough."
 msgstr ""
 
-#: custom-sticky-notes.php:343
+#: custom-sticky-notes.php:341
 msgid "Failed authentication. Invalid Ajax call."
 msgstr ""
 
-#: custom-sticky-notes.php:348
+#: custom-sticky-notes.php:346
 msgid "Ajax event is not specified."
 msgstr ""
 
-#: custom-sticky-notes.php:357
+#: custom-sticky-notes.php:355
 msgid "Method handling of an Ajax event does not exist."
 msgstr ""
 
-#: custom-sticky-notes.php:375
+#: custom-sticky-notes.php:373
 msgid "Error of Ajax."
 msgstr ""
 
-#: custom-sticky-notes.php:405
+#: custom-sticky-notes.php:403
 msgid "Ajax call is invalid."
 msgstr ""
 
-#: custom-sticky-notes.php:419 custom-sticky-notes.php:432
+#: custom-sticky-notes.php:417 custom-sticky-notes.php:430
 #, php-format
 msgid "Function called: %s; %s"
 msgstr ""
 
-#: custom-sticky-notes.php:419
+#: custom-sticky-notes.php:417
 msgid "Custom Sticky Notes plugin has activated."
 msgstr ""
 
-#: custom-sticky-notes.php:432
+#: custom-sticky-notes.php:430
 msgid "Custom Sticky Notes plugin has been deactivation."
 msgstr ""
 
-#: custom-sticky-notes.php:478
+#: custom-sticky-notes.php:476
 msgid "Failed to logging."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#. Name.
+msgid "Custom Sticky Notes"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -92,36 +97,17 @@ msgstr ""
 msgid "This plugin will add simple sticky notes in the WordPress admin bar."
 msgstr ""
 
-#. Author of the plugin/theme
-msgid "ka2"
-msgstr ""
-
-#. Author URI of the plugin/theme
-msgid "http://ka2.org"
-msgstr ""
-
-#. Copyright of the plugin/theme
-msgid "2015 monauralsound (email : ka2@ka2.org)"
-msgstr ""
-
 #. Short description.
 msgid "Add simple sticky notes in the WordPress admin bar."
 msgstr ""
 
 #. Found in description paragraph.
-msgid ""
-"The recorded snippets on this notes will be able to utilize across the "
-"each management screen."
+msgid "The recorded snippets on this notes will be able to utilize across the each management screen."
 msgstr ""
-""
-""
 
 #. Found in description paragraph.
-msgid ""
-"Of course, if you enable the admin bar, it can also be used in the WEB "
-"frontend."
+msgid "Of course, if you enable the admin bar, it can also be used in the WEB frontend."
 msgstr ""
-""
 
 #. Found in changelog list item.
 msgid "Initial public release!"

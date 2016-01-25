@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Sticky Notes 1.0.0\n"
-"POT-Creation-Date: 2015-10-07 18:19+0900\n"
+"Project-Id-Version: Custom Sticky Notes 1.0.1\n"
+"POT-Creation-Date: 2016-01-25 16:07+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ka2 <ka2@ka2.org>\n"
 "Language-Team: ka2 <ka2@ka2.org>\n"
@@ -13,121 +13,119 @@ msgstr ""
 "X-Poedit-KeywordsList: __;_e;_x;_n;esc_attr__;esc_attr_e;esc_html__;"
 "esc_html_e\n"
 "X-Poedit-Basepath: ..\n"
-"X-Generator: Poedit 1.8.3\n"
+"X-Generator: Poedit 1.8.6\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: debug.log\n"
 
-#: custom-sticky-notes.php:174
+#: custom-sticky-notes.php:172
 msgid "Now Cached"
 msgstr "保存済み"
 
-#: custom-sticky-notes.php:306
+#: custom-sticky-notes.php:304
 msgid "Sticky Notes"
 msgstr "付箋"
 
-#: custom-sticky-notes.php:319
+#: custom-sticky-notes.php:317
 msgid "Let's start Sticky Notes!"
-msgstr ""
+msgstr "ご自由に記入してください"
 
-#: custom-sticky-notes.php:320
+#: custom-sticky-notes.php:318
 msgid "Cache to local only"
 msgstr "ブラウザだけに保存"
 
-#: custom-sticky-notes.php:321
+#: custom-sticky-notes.php:319
 msgid "Save"
 msgstr "保存"
 
-#: custom-sticky-notes.php:321
+#: custom-sticky-notes.php:319
 msgid "Clear"
 msgstr "クリア"
 
-#: custom-sticky-notes.php:321
+#: custom-sticky-notes.php:319
 msgid "Close"
 msgstr "閉じる"
 
-#: custom-sticky-notes.php:340
+#: custom-sticky-notes.php:338
 msgid "Parameters for calling Ajax is not enough."
 msgstr "AJAXを呼び出すためのパラメータに不足があります。"
 
-#: custom-sticky-notes.php:343
+#: custom-sticky-notes.php:341
 msgid "Failed authentication. Invalid Ajax call."
 msgstr "認証に失敗しました。無効なAJAX呼び出しです。"
 
-#: custom-sticky-notes.php:348
+#: custom-sticky-notes.php:346
 msgid "Ajax event is not specified."
 msgstr "AJAXイベントが指定されていません。"
 
-#: custom-sticky-notes.php:357
+#: custom-sticky-notes.php:355
 msgid "Method handling of an Ajax event does not exist."
 msgstr "AJAXイベントをハンドリングするメソッドがありません。"
 
-#: custom-sticky-notes.php:375
+#: custom-sticky-notes.php:373
 msgid "Error of Ajax."
 msgstr "AJAXのエラーです。"
 
-#: custom-sticky-notes.php:405
+#: custom-sticky-notes.php:403
 msgid "Ajax call is invalid."
-msgstr "Ajaxの呼び出しが不正です。"
+msgstr "AJAXの呼び出しが不正です。"
 
-#: custom-sticky-notes.php:419 custom-sticky-notes.php:432
+#: custom-sticky-notes.php:417 custom-sticky-notes.php:430
 #, php-format
 msgid "Function called: %s; %s"
-msgstr ""
+msgstr "呼び出された関数: %s; %s"
 
-#: custom-sticky-notes.php:419
+#: custom-sticky-notes.php:417
 msgid "Custom Sticky Notes plugin has activated."
-msgstr ""
+msgstr "カスタム付箋プラグインを有効化しました。"
 
-#: custom-sticky-notes.php:432
+#: custom-sticky-notes.php:430
 msgid "Custom Sticky Notes plugin has been deactivation."
-msgstr ""
+msgstr "カスタム付箋プラグインが無効化されました。"
 
-#: custom-sticky-notes.php:478
+#: custom-sticky-notes.php:476
 msgid "Failed to logging."
-msgstr "ログの出力に失敗しました。"
+msgstr "ログ出力に失敗しました。"
 
-#. Plugin Name of the plugin/theme
-#. Name.
+#: external-translate-text.php:6
 msgid "Custom Sticky Notes"
 msgstr "カスタム付箋"
 
-#. Description of the plugin/theme
-#. Found in description paragraph.
+#: external-translate-text.php:9
 msgid "This plugin will add simple sticky notes in the WordPress admin bar."
 msgstr "このプラグインはWordPressの管理バーにシンプルな付箋を追加します。"
 
-#. Author of the plugin/theme
+#: external-translate-text.php:11
 msgid "ka2"
-msgstr ""
+msgstr "ka2"
 
-#. Author URI of the plugin/theme
-msgid "http://ka2.org"
-msgstr ""
+#: external-translate-text.php:13
+msgid "https://ka2.org"
+msgstr "https://ka2.org"
 
-#. Copyright of the plugin/theme
-msgid "2015 monauralsound (email : ka2@ka2.org)"
-msgstr ""
+#: external-translate-text.php:15
+msgid "2015-2016 MonauralSound (email : ka2@ka2.org)"
+msgstr "2015-2016 MonauralSound (email : ka2@ka2.org)"
 
-#. Short description.
+#: external-translate-text.php:17
 msgid "Add simple sticky notes in the WordPress admin bar."
 msgstr "WordPressの管理バーにシンプルな付箋を追加"
 
-#. Found in description paragraph.
+#: external-translate-text.php:19
 msgid ""
-"The recorded snippets on this notes will be able to utilize across the "
-"each management screen."
+"The recorded snippets on this notes will be able to utilize across the each "
+"management screen."
 msgstr ""
 "この付箋に記録されたスニペットは各種管理画面をまたいで利用することができま"
 "す。"
 
-#. Found in description paragraph.
+#: external-translate-text.php:21
 msgid ""
 "Of course, if you enable the admin bar, it can also be used in the WEB "
 "frontend."
 msgstr ""
 "もちろん、管理バーを有効化していれば、WEBフロントエンドでも利用できます。"
 
-#. Found in changelog list item.
+#: external-translate-text.php:23
 msgid "Initial public release!"
 msgstr "初期版リリース！"

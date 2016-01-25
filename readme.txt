@@ -3,8 +3,8 @@ Contributors: ka2
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2YZY4HWYSWEWG&lc=en_US&currency_code=USD&item_name=
 Tags: custom sticky notes, admin bar, sticky notes, snippets, clipboard
 Requires at least: 3.7
-Tested up to: 4.3.1
-Stable tag: 1.0.0
+Tested up to: 4.4.1
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,23 +25,24 @@ Of course, if you enable the admin bar, it can also be used in the WEB frontend.
 
 That's it. Now you can easily start recording snippets on the WordPress
 
+== Frequently Asked Questions ==
+
+
 == Screenshots ==
 
 1. If the admin bar has enabled, sticky notes will pop up anytime, anywhere.
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixed a bug that occurs syntax error at php 5.3 or less.
+
 = 1.0.0 =
 * Initial public release!
 
-== Frequently Asked Questions ==
-
-It is not yet now.
 
 == Other Notes ==
 
-Original source is managing on the [GitHub](https://github.com/ka215/custom-sticky-notes "https://github.com/ka215/custom-sticky-notes").
 
 == Upgrade Notice ==
 
-Initial public release!
