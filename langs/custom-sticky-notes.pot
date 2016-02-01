@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Custom Sticky Notes 1.0.1\n"
+"Project-Id-Version: Custom Sticky Notes 1.0.2\n"
 "POT-Creation-Date: 2016-01-25 15:45+0900\n"
 "PO-Revision-Date: \n"
 "Last-Translator: ka2 <ka2@ka2.org>\n"

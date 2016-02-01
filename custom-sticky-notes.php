@@ -3,7 +3,7 @@
   Plugin Name: Custom Sticky Notes
   Plugin URI: https://ka2.org/
   Description: This plugin will add simple sticky notes in the WordPress admin bar.
-  Version: 1.0.1
+  Version: 1.0.2
   Author: ka2
   Author URI: https://ka2.org/
   Copyright: 2015-2016 MonauralSound (email : ka2@ka2.org)
@@ -30,7 +30,7 @@
 */
 ?>
 <?php
-define( 'CSNP_PLUGIN_VERSION', '1.0.1' );
+define( 'CSNP_PLUGIN_VERSION', '1.0.2' );
 define( 'CSNP_DB_VERSION', '1.0' );
 define( 'CSNP', 'custom-sticky-notes' ); // This plugin domain name
 
@@ -137,6 +137,7 @@ final class CustomStickyNotes {
    * Fire this hook when append into <head> tag for this plugin
    *
    * @since 1.0.0
+   * @revision 1.0.2
    */
   public function add_header() {
     
@@ -174,6 +175,7 @@ EOS;
    * Fire this hook when append into <body> tag (just before </body>)
    *
    * @since 1.0.0
+   * @revision 1.0.2
    */
   public function add_footer() {
     
