@@ -157,7 +157,15 @@ final class CustomStickyNotes {
 </style>
 EOS;
     
-    echo $_add_styles;
+    if ( ! is_admin() ) {
+      $_add_script = <<<EOS
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+EOS;
+    } else {
+      $_add_script = '';
+    }
+    
+    echo $_add_styles, $_add_script;
     
   }
   
@@ -171,12 +179,37 @@ EOS;
     
     $_message = __( 'Now Cached', CSNP );
     
-    $_add_scripts = <<<EOS
+    if ( ! is_admin() ) {
+      $_script_head = <<<EOS
+<script>
+if ( typeof $ === "undefined" ) {
+  google.load("jquery", "1");
+}
+google.setOnLoadCallback(function() {
+  $(function(){
+EOS;
+      $_script_foot = <<<EOS
+  });
+});
+</script>
+EOS;
+      
+    } else {
+      $_script_head = <<<EOS
 <script>
 jQuery(document).ready(function($){
+EOS;
+      $_script_foot = <<<EOS
+});
+</script>
+EOS;
+      
+    }
+    
+    $_script_body = <<<EOS
   
   var saveLocalStorage = function(){
-    var cacheData = array();
+    var cacheData = new Array();
     cacheData.push($('#csnp-content-body').val());
     localStorage.setItem('csnp-local-cache', JSON.stringify(cacheData));
     $('#cache-notes').text('{$_message}');
@@ -261,11 +294,9 @@ jQuery(document).ready(function($){
     $('#local-only').prop('checked', true);
   }
   
-});
-</script>
 EOS;
     
-    echo $_add_scripts;
+    echo $_script_head, $_script_body, $_script_foot;
     
   }
   
