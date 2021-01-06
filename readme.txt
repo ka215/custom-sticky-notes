@@ -31,12 +31,13 @@ That's it. Now you can easily start recording snippets on the WordPress
 == Screenshots ==
 
 1. If the admin bar has enabled, sticky notes will pop up anytime, anywhere.
+2. You can now choose the color scheme of sticky notes from two themes.
 
 == Changelog ==
 
 = 1.1.0 =
 * Changed to internal processing that does not depend on jQuery.
-* Improved several UI/UX.
+* Improved and enhanced several UI/UX.
 
 = 1.0.2 =
 * Have optimized the jQuery loading process at the web-frontend and management screen.
