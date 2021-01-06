@@ -11,7 +11,7 @@
  * Plugin Name:       Custom Sticky Notes
  * Plugin URI:        https://ka2.org/custom-sticky-notes/
  * Description:       This plugin will add simple sticky notes in the WordPress admin bar.
- * Version:           1.1.0
+ * Version:           1.1.1
  * Requires at least: 3.7
  * Requires PHP:      5.3
  * Author:            ka2
@@ -229,13 +229,7 @@ JS;
         $_setting_item_1  = __( 'Apply Dark Theme', CSNP );
         $_setting_item_2  = __( 'Use Session-Storage as Caching', CSNP );
         $_setting_item_3  = __( 'Enable Auto Save to Local Cache', CSNP );
-        
-        $_args = array(
-            'id'     => $this->domain_name,
-            'title'  => '<div id="csnp-container"><span class="dashicons-before dashicons-pressthis"><span>' . $_title . '</span></span></div>',
-            'parent' => 'top-secondary',
-            'meta'   => array(
-                'html' => <<<EOD
+        $_html            = <<<EOD
 <div id="csnp-panel" class="csnp-panel-container">
   <form method="post" action="{$_ajax_url}" id="csnp-action-form">
     <div class="csnp-panel-header">
@@ -290,7 +284,14 @@ JS;
     </div>
   </form>
 </div>
-EOD,
+EOD;
+        
+        $_args = array(
+            'id'     => $this->domain_name,
+            'title'  => '<div id="csnp-container"><span class="dashicons-before dashicons-pressthis"><span>' . $_title . '</span></span></div>',
+            'parent' => 'top-secondary',
+            'meta'   => array(
+                'html'  => $_html,
                 'class' => 'menupop',
             ),
         );
@@ -309,8 +310,9 @@ EOD,
      * @since 1.0.0
      */
     public function ajax_handler() {
-        if ( ! isset( $GLOBALS['_REQUEST']['_wpnonce'] ) ) 
+        if ( ! isset( $GLOBALS['_REQUEST']['_wpnonce'] ) ) {
             $this->ajax_error( __( 'Parameters for calling Ajax is not enough.', CSNP ) );
+        }
         
         if ( ! wp_verify_nonce( $GLOBALS['_REQUEST']['_wpnonce'], $this->domain_name . '_' . $this->plugin_ajax_action ) ) {
             $this->ajax_error( __( 'Failed authentication. Invalid Ajax call.', CSNP ) );
