@@ -1,0 +1,607 @@
+#csnp-container {
+  width: 100%;
+  min-height: $container-height;
+  height: $container-height;
+  max-height: $container-height;
+  padding: 4px 0 0 0;
+
+  &.active {
+    background-color: $container-active-bgcolor;
+    color: $container-active-color;
+  }
+
+  * { pointer-events: none; }
+
+  .dashicons-before span,
+  .csnp-panel-header .dashicons-before span {
+    position: relative !important;
+    top: -4px !important;
+  }
+
+  & + #csnp-panel {
+    display: none;
+  }
+
+  &.active + #csnp-panel {
+    display: block;
+  }
+}
+
+#csnp-panel {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: -200%;
+  background-color: $default-bgcolor;
+  padding: 8px 12px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $default-bdcolor;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0px 3px 6px $default-shadow-color !important;
+  box-sizing: border-box;
+  z-index: -1;
+  transition: all 0.2s linear !important;
+
+  .csnp-panel-header {
+    position: relative !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+    color: $default-color;
+
+    label[for="csnp-lock-panel"] {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: start;
+      align-items: center;
+
+      #csnp-lock-panel {
+        display: none;
+      }
+
+      #csnp-lock-icon {
+        position: relative;
+        top: 4px;
+        pointer-events: none;
+      }
+
+      #csnp-lock-text {
+        margin-left: 4px;
+        pointer-events: none;
+      }
+
+      #csnp-lock-panel:checked ~ span {
+        color: $default-active-color;
+      }
+    }
+
+    #cache-notes {
+      position: relative;
+      top: 0;
+      width: 100%;
+      max-width: calc(100% - 150px);
+      padding: 0 1em;
+      font-weight: 500;
+      color: $default-cache-notes;
+
+      &.text-fadeout {
+        animation: fadeOut 1.5s;
+        animation-fill-mode: both;
+      }
+    }
+
+    .csnp-dismiss {
+      position: relative;
+      right: -10px;
+      top: 4px;
+      color: $default-offtone-color;
+
+      &:hover,
+      &:focus {
+        color: $default-focus-color;
+      }
+    }
+  }
+
+  .csnp-panel-body {
+    min-height: 130px;
+  }
+
+  #csnp-content-body {
+    position: relative;
+    min-width: 330px;
+    width: 330px;
+    min-height: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 8px;
+    font-size: 13px;
+    line-height: 20px;
+    color: $default-textarea-color;
+    background-color: $default-textarea-bgcolor;
+    border-style: solid;
+    border-width: 1px;
+    border-color: $default-bdcolor;
+    border-radius: 3px;
+    resize: vertical;
+    outline: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    /* box-sizing: border-box; */
+
+    &:focus {
+      border-color: $default-textarea-bdcolor;
+    }
+  }
+
+  .csnp-panel-footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    label {
+      color: $default-offtone-color;
+    }
+
+    input[type=checkbox] {
+      border: 1px solid $wp-bdcolor;
+      color: $default-color;
+      clear: none;
+      cursor: pointer;
+      display: inline-block;
+      line-height: 0;
+      height: 19px;
+      margin: -3px -3px 0 0;
+      outline: 0;
+      padding: 0 !important;
+      text-align: center;
+      vertical-align: middle;
+      width: 19px;
+      min-width: 19px;
+      -webkit-appearance: none;
+      box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+      transition: 0.05s border-color ease-in-out;
+
+      &:checked::before {
+        content: $default-check-mark;
+        position: relative;
+        margin: -3px 0 0 -3.5px;
+        height: 21px;
+        width: 21px;
+      }
+    }
+
+    #local-only {
+      width: 15px !important;
+      min-width: 16px !important;
+      height: 15px !important;
+      margin-top: -2px;
+      margin-right: 4px;
+      border-radius: 4px;
+      border-color: $default-checkbox-bdcolor;
+      background: $default-checkbox-bgcolor;
+
+      & + span {
+        color: $default-offtone-color;
+      }
+
+      &:focus {
+        border-color: $default-active-bdcolor;
+        box-shadow: 0 0 0 1px $default-active-bdcolor;
+      }
+
+      &:checked + span,
+      &:hover + span {
+        color: $default-active-color;
+      }
+    }
+
+    .csnp-btn {
+      display: inline-block;
+      text-decoration: none;
+      font-size: 13px;
+      line-height: 2.15384615;
+      min-height: 30px;
+      margin: 0;
+      padding: 0 10px !important;
+      cursor: pointer;
+      border-width: 1px;
+      border-style: solid;
+      -webkit-appearance: none;
+      border-radius: 3px !important;
+      white-space: nowrap;
+      outline: none;
+      box-sizing: border-box;
+
+      &.csnp-btn-primary {
+        background: $default-btn-primary;
+        border-color: $default-btn-primary;
+        color: $default-checkbox-bgcolor;
+
+        &:focus,
+        &:hover {
+          background: $default-btn-primary-active;
+          border-color: $default-btn-primary-active;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 1px lighten($default-btn-primary-active,30%);
+        }
+      }
+
+      &.csnp-btn-secondary {
+        background: $default-btn-secondary;
+        border-color: $default-btn-secondary;
+        color: $safe-black;
+
+        &:focus,
+        &:hover {
+          background: $default-btn-secondary-active;
+          border-color: $default-btn-secondary-active;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 1px lighten($dark-btn-secondary-active,30%);
+        }
+      }
+
+      &.hidden,
+      &[hidden] {
+        display: none;
+      }
+    }
+
+    #csnp-setting {
+      display: inline-block;
+      padding: 0 2px 0 10px;
+      vertical-align: middle;
+      line-height: 30px;
+      color: $muted-gray;
+
+      span {
+        position: relative;
+        top: 4px;
+      }
+
+      &:hover,
+      &focus {
+        color: $default-btn-primary-active;
+      }
+    }
+  }
+
+  #csnp-config-block {
+    position: relative;
+    display: none;
+    max-height: 0;
+    margin: 0;
+    border: none;
+    padding: 0;
+    color: $default-color;
+    box-sizing: border-box;
+    transition: max-height 0.3s linear;
+
+    &.open {
+      display: block;
+      margin-top: 6px;
+      border-top: dotted 1px $divid-bdcolor;
+      padding-top: 6px;
+      max-height: 150px;
+    }
+
+    div {
+      height: 32px;
+      line-height: 32px;
+      vertical-align: middle;
+    }
+
+    h5 {
+      line-height: 32px;
+      font-weight: 600;
+
+      span {
+        position: relative;
+        top: 5px;
+        margin-right: 2px;
+        color: $muted-gray;
+      }
+    }
+  }
+
+  /* Toggle Switch */
+  .tgl {
+    position: relative;
+    margin-bottom: 0;
+    padding-left: calc(9px * 5);
+    min-height: 17px;
+    line-height: 1;
+    vertical-align: middle;
+
+    input[type="checkbox"] {
+      display: none;
+
+      &,
+      &::after,
+      &::before,
+      & *,
+      & *::after,
+      & *::before,
+      & ~ .tgl-btn {
+        box-sizing: border-box;
+
+        &::selection { background: none; }
+      }
+
+      + .tgl-btn {
+        outline: 0;
+        display: block;
+        width: calc(9px * 4);
+        height: 19px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        user-select: none;
+
+        /* theme */
+        background: rgba($safe-gray, 0.5);
+        border-radius: 9.5px;
+        padding: 3px;
+        transition: all 0.4s ease;
+
+        &::after,
+        &::before {
+          position: relative;
+          display: block;
+          content: '';
+          width: 50%;
+          height: 100%;
+        }
+
+        &::after {
+          left: 0;
+
+          /* theme */
+          border-radius: 50%;
+          background: $safe-white;
+          transition: all 0.2s ease;
+        }
+
+        &::before { display: none; }
+      }
+
+      &:checked + .tgl-btn {
+        /* theme */
+        background: $default-active-color;
+
+        &::after {
+          left: 50%;
+        }
+      }
+    }
+
+    &.flat {
+      input[type="checkbox"] {
+        + .tgl-btn {
+          padding: 3px;
+          background: transparent;
+          border: 2px solid $safe-gray;
+          transition: all 0.2s ease;
+
+          &::after {
+            width: calc(50% - 3px);
+            background: $safe-gray;
+            border-radius: 50%;
+          }
+        }
+
+        &:checked + .tgl-btn {
+          background: transparent;
+          border: 2px solid $default-active-color;
+
+          &::after {
+            left: calc(50% + 3px);
+            background: $default-active-color;
+          }
+        }
+      }
+    }
+  }
+
+  &.shown {
+    visibility: visible;
+    opacity: 1;
+    top: 32px;
+  }
+
+  &.csnp-theme-dark {
+    background-color: $dark-bgcolor;
+    border-color: $dark-bdcolor;
+    box-shadow: 0px 3px 6px $dark-shadow-color !important;
+
+    .csnp-panel-header {
+      color: $dark-color;
+
+      label[for="csnp-lock-panel"] {
+        #csnp-lock-panel:checked ~ span {
+          color: $dark-active-color;
+        }
+      }
+
+      #cache-notes {
+        color: $dark-cache-notes;
+      }
+
+      .csnp-dismiss {
+        color: $dark-offtone-color;
+
+        &:hover,
+        &:focus {
+          color: $dark-focus-color;
+        }
+      }
+    }
+
+    #csnp-content-body {
+      color: $dark-textarea-color;
+      background-color: $dark-textarea-bgcolor;
+      border-color: transparent;
+
+      &:focus {
+        border-color: $dark-textarea-bdcolor;
+      }
+    }
+
+    .csnp-panel-footer {
+      label {
+        color: $dark-offtone-color;
+      }
+
+      input[type=checkbox] {
+        &:checked::before {
+          content: $dark-check-mark;
+        }
+      }
+
+      #local-only {
+        border-color: $dark-checkbox-bdcolor;
+        background: $dark-checkbox-bgcolor;
+
+        & + span {
+          color: $dark-offtone-color;
+        }
+
+        &:focus {
+          border-color: $dark-active-bdcolor;
+          box-shadow: 0 0 0 1px $dark-active-bdcolor;
+        }
+
+        &:checked + span,
+        &:hover + span {
+          color: $dark-active-color;
+        }
+      }
+
+      .csnp-btn {
+        &.csnp-btn-primary {
+          background: $dark-btn-primary;
+          border-color: $dark-btn-primary;
+          color: $safe-black;
+
+          &:focus,
+          &:hover {
+            background: $dark-btn-primary-active;
+            border-color: $dark-btn-primary-active;
+          }
+
+          &:focus {
+            box-shadow: 0 0 0 2px darken($dark-btn-primary,30%);
+          }
+        }
+
+        &.csnp-btn-secondary {
+          background: $dark-btn-secondary;
+          border-color: $dark-btn-secondary;
+          color: $safe-black;
+
+          &:focus,
+          &:hover {
+            background: $dark-btn-secondary-active;
+            border-color: $dark-btn-secondary-active;
+          }
+
+          &:focus {
+            box-shadow: 0 0 0 2px darken($dark-btn-secondary,30%);
+          }
+        }
+      }
+
+      #csnp-setting {
+        color: $muted-gray;
+
+        &:hover,
+        &focus {
+          color: $dark-btn-primary-active;
+        }
+      }
+    }
+
+    #csnp-config-block {
+        color: $dark-color;
+    }
+
+    .tgl {
+      input[type="checkbox"] {
+        + .tgl-btn {
+          background: rgba($light-gray, 0.5);
+        }
+
+        &:checked + .tgl-btn {
+          background: $dark-active-color;
+        }
+      }
+
+      &.flat {
+        input[type="checkbox"] {
+          + .tgl-btn {
+            background: transparent;
+            border: 2px solid $light-gray;
+
+            &::after {
+              background: $light-gray;
+            }
+          }
+
+          &:checked + .tgl-btn {
+            background: transparent;
+            border: 2px solid $dark-active-color;
+
+            &::after {
+              background: $dark-active-color;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .mt-1 { margin-top: 1em !important; }
+  .mr-1 { margin-right: 1em !important; }
+  .mb-1 { margin-bottom: 1em !important; }
+  .ml-1 { margin-left: 1em !important; }
+
+  .pl-1 { padding-left: 1em !important; }
+  .pr-1 { padding-right: 1em !important; }
+
+  .text-left   { text-align: left; }
+  .text-center { text-align: center; }
+  .text-right  { text-align: right; }
+
+  .text--muted { color: $muted-gray; }
+
+  .spacer {
+    position: relative !important;
+    display: inline-block;
+    margin: 0.5em !important;
+    width: 1px !important;
+    height: 1px !important;
+  }
+
+}
+
+@keyframes fadeOut {
+  0% { opacity: 0; }
+  25% { opacity: 1; }
+  75% { opacity: 1; }
+  100% { opacity: 0; }
+}

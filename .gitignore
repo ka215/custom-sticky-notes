@@ -1,5 +1,20 @@
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
+node_modules
+vendor
+assets/css/*.js
+functions.php
+
+.DS_Store
+.sass-cache/
 *.log
+*.orig
+*.bat
+__.*
+
 external-translate-text.php
 screenshot-*.png
+
+package-lock.json
+composer.lock
+yarn.lock

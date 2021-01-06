@@ -5,12 +5,12 @@ Add simple sticky notes in the WordPress admin bar.
 
 | Meta Key | Meta Value |
 |:-----------:|:----|
-| Contributors | [ka2.org](http://ka2.org) |
-| Donate link | [Paypal Donations](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=2YZY4HWYSWEWG&lc=en_US&currency_code=USD&item_name=) |
+| Contributors | [Ka2](https://ka2.org) |
+| Donate link | [Donations](https://github.com/sponsors/ka215) |
 | Tags | custom sticky notes, admin bar, sticky notes, snippets, clipboard |
 | Requires at least| 3.7 |
-| Tested up to | 4.4.1 |
-| Stable tag | 1.0.2 |
+| Tested up to | 5.6.0 |
+| Stable tag | 1.1.0 |
 | License | GPLv2 or later |
 | License URI | http://www.gnu.org/licenses/gpl-2.0.html |
 
@@ -37,6 +37,11 @@ That's it. Now you can easily start recording snippets on the WordPress
 1. If the admin bar has enabled, sticky notes will pop up anytime, anywhere.
 
 ## Changelog 
+
+### 1.1.0
+
+* Changed to internal processing that does not depend on jQuery.
+* Improved several UI/UX.
 
 ### 1.0.2
 

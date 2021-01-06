@@ -1,0 +1,60 @@
+/*
+ * For admin bar
+ */
+$container-height: 28px;
+$container-active-bgcolor: transparent;/* #32373c */
+$container-active-color: #00b9eb;/* #ffba00 */
+
+/*
+ * Common
+ */
+$safe-black: #35360c;
+$muted-gray: #72777d;
+$divid-bdcolor: #606060;
+$safe-white: darken(#ffffff,10%);
+$light-gray: lighten(#c0c0c0,10%);
+$safe-gray: #b1b4b7;
+$wp-bdcolor: #7e8993;
+
+/*
+ * For Custom Sticky Notes Panel
+ */
+$default-bgcolor: #f4f4f4;
+$default-bdcolor: #e5e5e5;
+$default-color: #555;
+$default-active-color: #007cba;
+$default-active-bdcolor: #007cba;
+$default-shadow-color: rgba(51,51,51,0.2);
+$default-cache-notes: lighten(#00937b,5%);/* #398f14 */
+$default-checkbox-bdcolor: #7e8993;
+$default-checkbox-bgcolor: #fff;
+$default-offtone-color: #707070;
+$default-focus-color: #0091cd;
+$default-textarea-color: #444;
+$default-textarea-bgcolor: #f4f4f7;
+$default-textarea-bdcolor: rgba(#0071a1,0.45);
+$default-btn-primary: #007cba;
+$default-btn-primary-active: #0071a1;
+$default-btn-secondary: #d8d8d8;
+$default-btn-secondary-active: darken(#d8d8d8,5%);
+$default-check-mark: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%231e8cbe%27%2F%3E%3C%2Fsvg%3E);
+
+$dark-bgcolor: #32373c;
+$dark-bdcolor: transparent;
+$dark-color: #eee;
+$dark-active-color: #ffba00;
+$dark-active-bdcolor: #ffba00;
+$dark-shadow-color: rgba(0,0,0,0.2);
+$dark-cache-notes: lighten(#00937b,10%);
+$dark-checkbox-bdcolor: lighten(#32373c,5%);
+$dark-checkbox-bgcolor: lighten(#32373c,15%);
+$dark-offtone-color: #a0a5aa;
+$dark-focus-color: #0091cd;
+$dark-textarea-color: #f4f4f4;
+$dark-textarea-bgcolor: lighten(#32373c,5%);
+$dark-textarea-bdcolor: rgba(#ffba00,0.45);
+$dark-btn-primary: #ffba00;
+$dark-btn-primary-active: darken(#ffba00,5%);
+$dark-btn-secondary: #91928d;
+$dark-btn-secondary-active: darken(#91928d,5%);
+$dark-check-mark: url(data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2020%2020%27%3E%3Cpath%20d%3D%27M14.83%204.89l1.34.94-5.81%208.38H9.02L5.78%209.67l1.34-1.25%202.57%202.4z%27%20fill%3D%27%23ffba00%27%2F%3E%3C%2Fsvg%3E);

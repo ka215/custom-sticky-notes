@@ -1,0 +1,59 @@
+{
+  "name": "custom-sticky-notes",
+  "version": "1.1.0",
+  "description": "This plugin will add simple sticky notes in the WordPress admin bar.",
+  "main": "custom-sticky-notes.php",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --config webpack.config && rm -Rf ./assets/css/*.js",
+    "prod": "cross-env NODE_ENV=production webpack --config webpack.config && rm -Rf ./assets/css/*.js",
+    "test": "babel ./src/scripts/index.js --out-file ./assets/js/ignitor.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ka215/custom-sticky-notes.git"
+  },
+  "keywords": [
+    "custom-sticky-notes",
+    "sticky-notes",
+    "admin-bar",
+    "WordPress",
+    "plugin"
+  ],
+  "author": "Ka2 <ka2@ka2.org>",
+  "license": "GPL v2 or later",
+  "bugs": {
+    "url": "https://github.com/ka215/custom-sticky-notes/issues"
+  },
+  "homepage": "https://ka2.org/",
+  "dependencies": {
+    "core-js": "^3.6.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.12.1",
+    "@babel/preset-env": "^7.11.5",
+    "autoprefixer": "^10.0.0",
+    "babel-loader": "^8.1.0",
+    "cross-env": "^7.0.2",
+    "css-loader": "^4.3.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^7.11.0",
+    "eslint-loader": "^4.0.2",
+    "glob": "^7.1.6",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.14.1",
+    "postcss-loader": "^4.0.2",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not ie <= 10",
+    "not op_mini all",
+    "Android >= 4",
+    "iOS >= 10"
+  ]
+}
