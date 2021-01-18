@@ -12,9 +12,6 @@ functions.php
 *.bat
 __.*
 
-external-translate-text.php
-screenshot-*.png
-
 package-lock.json
 composer.lock
 yarn.lock
