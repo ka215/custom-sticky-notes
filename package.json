@@ -1,6 +1,6 @@
 {
   "name": "custom-sticky-notes",
-  "version": "1.1.2",
+  "version": "1.1.3",
   "description": "This plugin will add simple sticky notes in the WordPress admin bar.",
   "main": "custom-sticky-notes.php",
   "scripts": {

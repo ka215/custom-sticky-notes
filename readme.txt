@@ -4,7 +4,7 @@ Donate link: https://github.com/sponsors/ka215
 Tags: custom sticky notes, admin bar, sticky notes, snippets, clipboard
 Requires at least: 3.7
 Tested up to: 5.6.0
-Stable tag: 1.1.1
+Stable tag: 1.1.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
@@ -34,6 +34,9 @@ That's it. Now you can easily start recording snippets on the WordPress
 2. You can now choose the color scheme of sticky notes from two themes.
 
 == Changelog ==
+
+= 1.1.3 =
+* Modified the translation files for Japanese.
 
 = 1.1.2 =
 * Improved several plugin UI/UX.

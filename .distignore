@@ -8,6 +8,10 @@
 .eslintrc
 .gitignore
 babel.config.js
+debug.log
 package.json
 README.md
 webpack.config.js
+package-lock.json
+yarn.lock
+yarn-error.log

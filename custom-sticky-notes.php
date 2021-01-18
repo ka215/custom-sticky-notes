@@ -11,7 +11,7 @@
  * Plugin Name:       Custom Sticky Notes
  * Plugin URI:        https://ka2.org/custom-sticky-notes/
  * Description:       This plugin will add simple sticky notes in the WordPress admin bar.
- * Version:           1.1.2
+ * Version:           1.1.3
  * Requires at least: 3.7
  * Requires PHP:      5.3
  * Author:            ka2
@@ -37,7 +37,7 @@ You should have received a copy of the GNU General Public License
 along with Custom Sticky Notes. If not, see http://www.gnu.org/licenses/gpl-2.0.txt.
 */
 
-defined( 'CSNP_PLUGIN_VERSION' ) or define( 'CSNP_PLUGIN_VERSION', '1.1.2' );
+defined( 'CSNP_PLUGIN_VERSION' ) or define( 'CSNP_PLUGIN_VERSION', '1.1.3' );
 defined( 'CSNP' ) or define( 'CSNP', 'custom-sticky-notes' ); // This plugin domain name
 defined( 'CSNP_DEBUG' ) or define( 'CSNP_DEBUG', false );
 

@@ -1,6 +1,16 @@
 Custom Sticky Notes
 ===
 
+<p align="center">
+  <img alt="WordPress Plugin: Requires at least" src="https://img.shields.io/wordpress/plugin/wp-version/custom-sticky-notes?style=flat-square">
+  <img alt="WordPress Plugin: Tested up to" src="https://img.shields.io/wordpress/plugin/tested/custom-sticky-notes?style=flat-square">
+  <img alt="WordPress Plugin Version" src="https://img.shields.io/wordpress/plugin/v/custom-sticky-notes?style=flat-square">
+  <img alt="WordPress Plugin: Requires PHP" src="https://img.shields.io/wordpress/plugin/required-php/custom-sticky-notes?style=flat-square">
+  <img alt="WordPress Plugin Downloads" src="https://img.shields.io/wordpress/plugin/dt/custom-sticky-notes?style=flat-square">
+  <img alt="WordPress Plugin Active Installs" src="https://img.shields.io/wordpress/plugin/installs/custom-sticky-notes?style=flat-square">
+  <img alt="License" src="https://img.shields.io/badge/license-GPL%20(%3E%3D2)-blue?style=flat-square">
+</p>
+
 Add simple sticky notes in the WordPress admin bar.
 
 | Meta Key | Meta Value |
@@ -10,7 +20,7 @@ Add simple sticky notes in the WordPress admin bar.
 | Tags | custom sticky notes, admin bar, sticky notes, snippets, clipboard |
 | Requires at least| 3.7 |
 | Tested up to | 5.6.0 |
-| Stable tag | 1.1.2 |
+| Stable tag | 1.1.3 |
 | License | GPLv2 or later |
 | License URI | http://www.gnu.org/licenses/gpl-2.0.html |
 
@@ -38,6 +48,10 @@ That's it. Now you can easily start recording snippets on the WordPress
 ![screenshot](https://raw.githubusercontent.com/ka215/custom-sticky-notes/master/.wordpress-org/screenshot-2.png)
 
 ## Changelog 
+
+### 1.1.3
+
+* Modified the translation files for Japanese.
 
 ### 1.1.2
 

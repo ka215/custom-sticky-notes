@@ -1,7 +1,7 @@
 /**
  * Custom Sticky Notes scripts coded with non-jQuery
  * @package CustomStickyNotes
- * @since   1.1.2
+ * @since   1.1.3
  */
 import { postData } from './_postData'
 import Storage from './_webStorage'
