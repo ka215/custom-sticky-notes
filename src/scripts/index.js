@@ -1,7 +1,7 @@
 /**
  * Custom Sticky Notes scripts coded with non-jQuery
  * @package CustomStickyNotes
- * @since   1.1.0
+ * @since   1.1.2
  */
 import { postData } from './_postData'
 import Storage from './_webStorage'
@@ -9,7 +9,7 @@ import Storage from './_webStorage'
 const init = function() {
     const ls       = new Storage(),
           ss       = new Storage('SessionStorage'),
-          watchElm = document.getElementById('wp-admin-bar-custom-sticky-notes'),
+          barMenu  = document.getElementById('wp-admin-bar-custom-sticky-notes'),
           csnpForm = document.getElementById('csnp-action-form'),
           noteBody = document.getElementById('csnp-content-body'),
           defaults = { localCache: false, darkTheme: false, useSession: false, autosave: false }
@@ -36,7 +36,7 @@ const init = function() {
                             }
                         }
                         break
-                    default:
+                    case 'childList':
                         //console.log(mutation)
                         break
                 }
@@ -44,8 +44,8 @@ const init = function() {
           }),
           config = { attributes: true, childList: true }
 
-    if (watchElm) {
-        observer.observe(watchElm, config)
+    if (barMenu) {
+        observer.observe(barMenu, config)
     }
 
     if (document.getElementById('csnp-lock-panel')) {
@@ -73,11 +73,6 @@ const init = function() {
 
     noteBody.addEventListener('focus', () => {
         keepShow = true
-        /*
-        if (opts.autosave) {
-            updateCache()
-        }
-        */
     }, false)
 
     noteBody.addEventListener('blur', () => {
@@ -273,6 +268,8 @@ const init = function() {
             _body = document.getElementById('csnp-content-body')
 
         _body.innerHTML = cache
+        resizeHeight()
+
         document.getElementById('local-only').checked = opts.localCache
         document.getElementById('on-dark-theme').checked = opts.darkTheme
         triggerEvent(document.getElementById('on-dark-theme'), 'change')
@@ -298,13 +295,13 @@ const init = function() {
             paddingY = (parseInt(compStyles.getPropertyValue('padding-top'), 10) + parseInt(compStyles.getPropertyValue('padding-bottom'), 10)),
             newHeight = taElm.scrollHeight - paddingY
 
-        if ( taElm.scrollHeight > taElm.clientHeight ) {
+        if ( taElm.scrollHeight < maxHeight ) {
             if ( maxHeight < newHeight ) {
                 newHeight = maxHeight
             }
             taElm.style.height = `${newHeight}px`
         } else {
-            taElm.style.height = '101px'
+            taElm.style.height = `${maxHeight}px`
         }
     }
 

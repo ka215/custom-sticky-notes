@@ -35,6 +35,9 @@ That's it. Now you can easily start recording snippets on the WordPress
 
 == Changelog ==
 
+= 1.1.2 =
+* Improved several plugin UI/UX.
+
 = 1.1.1 =
 * Fixed not working plugin activation.
 
