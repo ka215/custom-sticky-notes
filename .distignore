@@ -1,0 +1,13 @@
+/.wordpress-org
+/.git
+/.github
+/node_modules
+/src
+
+.distignore
+.eslintrc
+.gitignore
+babel.config.js
+package.json
+README.md
+webpack.config.js
